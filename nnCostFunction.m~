@@ -104,12 +104,7 @@ Theta2_grad = Delta2 / m;
 fakeTheta1 = Theta1;
 fakeTheta2 = Theta2;
 
-fakeTheta1(:,1) = zeros(size(fakeTheta1, 1), 1);
-fakeTheta2(:,1) = zeros(size(fakeTheta2, 1), 1);
-
-Theta1_grad = Theta1_grad + lambda/m * fakeTheta1;
-Theta2_grad = Theta2_grad + lambda/m * fakeTheta2;
-
+fakeTheta1(
 
 %
 % Part 3: Implement regularization with the cost function and gradients.
